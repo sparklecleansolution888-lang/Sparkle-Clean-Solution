@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPARKLE CLEAN SOLUTION | Lahore</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:'Plus Jakarta Sans',Arial,sans-serif;background:#FFFFFF;color:#334155;line-height:1.65;overflow-x:hidden}
+h1,h2,h3,.stat b,.price-card h3{font-family:'Sora',Arial,sans-serif;letter-spacing:0;font-weight:800;color:#0B1A5A;transform:translateZ(0);backface-visibility:hidden}
+a{text-decoration:none;color:inherit}
+.topbar{background:linear-gradient(90deg,#2563EB,#06B6D4,#2563EB);background-size:200% 100%;animation:gradMove 5s linear infinite;color:#fff;padding:10px 5%;display:flex;justify-content:space-between;font-size:13.5px;font-weight:700;flex-wrap:wrap;gap:8px}
+@keyframes gradMove{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+header{position:sticky;top:0;z-index:100;background:#FFFFFF;border-bottom:1px solid #E8EEF7;display:flex;justify-content:space-between;align-items:center;padding:12px 5%;box-shadow:0 4px 24px rgba(37,99,235,.08)}
+.logo img{height:52px;transition:.3s}
+.logo img:hover{transform:translateY(-2px)}
+nav{display:flex;gap:6px;flex-wrap:wrap}nav a{color:#475569;font-weight:600;font-size:15px;padding:9px 14px;border-radius:10px;cursor:pointer;transition:.3s}nav a.active,nav a:hover{background:#EFF6FF;color:#2563EB;transform:translateY(-1px);box-shadow:0 6px 16px rgba(37,99,235,.14)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:12px;font-weight:700;font-size:15px;border:none;cursor:pointer;position:relative;overflow:hidden;transition:.3s;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(37,99,235,.28)}
+.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 3s infinite}
+@keyframes shine{0%{left:-80%}60%,100%{left:130%}}
+.btn-blue{background:linear-gradient(135deg,#2563EB,#06B6D4);color:#fff}.btn-green{background:linear-gradient(135deg,#10B981,#059669);color:#fff}.btn-outline{background:#fff;color:#0B1A5A;border:1.5px solid #DCE7FF}
+.hero{background:linear-gradient(180deg,#EFF6FF 0%,#FFFFFF 60%,#F0F9FF 100%);padding:58px 5%;text-align:center;border-bottom:1px solid #E8EEF7;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:420px;height:420px;background:radial-gradient(circle,rgba(37,99,235,.16),transparent 70%);top:-100px;left:-100px;animation:floatBall 7s ease-in-out infinite}
+.hero::after{content:"";position:absolute;width:380px;height:380px;background:radial-gradient(circle,rgba(6,182,212,.18),transparent 70%);bottom:-100px;right:-80px;animation:floatBall 8s ease-in-out infinite reverse}
+@keyframes floatBall{0%,100%{transform:translateY(0)}50%{transform:translateY(20px)}}
+.hero h1{font-size:54px;line-height:1.12;color:#0B1A5A;max-width:860px;margin:16px auto;font-weight:800}.hero h1 span{color:#2563EB}
+.hero p{font-size:17px;color:#475569;max-width:680px;margin:0 auto;font-weight:500}
+.hero-btns{display:flex;gap:12px;justify-content:center;margin:28px 0;flex-wrap:wrap}
+.badge{display:inline-block;background:#fff;border:1px solid #BFDBFE;padding:8px 16px;border-radius:100px;font-size:13px;font-weight:700;color:#2563EB;box-shadow:0 8px 20px rgba(37,99,235,.12);animation:badgePulse 3s ease-in-out infinite}
+@keyframes badgePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.hero-logo-wrap{text-align:center;margin-bottom:12px}
+.hero-logo{height:220px;max-width:92vw;width:auto;background:transparent;padding:0;border:none;border-radius:0;animation:slowFloat 4s ease-in-out infinite}
+@keyframes slowFloat{0%{transform:translateY(0px)}50%{transform:translateY(-10px)}100%{transform:translateY(0px)}}
+.stats{display:flex;gap:16px;justify-content:center;margin:28px 0 0;flex-wrap:wrap}.stat{background:#fff;border:1px solid #E0EAFD;border-radius:16px;padding:18px 20px;min-width:165px;text-align:left;box-shadow:0 8px 22px rgba(37,99,235,.07);transition:.35s}.stat:hover{transform:translateY(-5px);border-color:#2563EB;box-shadow:0 18px 32px rgba(37,99,235,.16)}.stat b{font-size:23px;color:#0B1A5A;display:block}.stat span{font-size:13px;color:#64748B;font-weight:500}
+.page{display:none}.page.active{display:block;animation:pageIn .5s ease}
+@keyframes pageIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+section{padding:50px 5%;max-width:1200px;margin:0 auto}h2{font-size:36px;color:#0B1A5A;margin:10px 0;font-weight:800}.sub{color:#475569;font-size:16px;margin-bottom:28px;font-weight:500}
+.page-hero{background:linear-gradient(135deg,#2563EB,#06B6D4,#10B981);background-size:200% 200%;animation:gradMove 7s ease infinite;color:#fff;padding:56px 5%;text-align:center;border-radius:20px;margin:20px 5%;box-shadow:0 20px 40px rgba(37,99,235,.22);position:relative;overflow:hidden}.page-hero h2{color:#fff}.page-hero p{color:#E0F2FE;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#FFFFFF;border-radius:18px;padding:26px;border:1.5px solid #E0EAFD;transition:.35s;position:relative;overflow:hidden;box-shadow:0 6px 18px rgba(37,99,235,.05)}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#2563EB,#06B6D4,#10B981);opacity:0;transition:.35s}
+.card:hover{border-color:#2563EB;transform:translateY(-6px);box-shadow:0 22px 38px rgba(37,99,235,.16)}
+.card:hover::before{opacity:1}
+.card h3{font-size:20px;color:#0B1A5A;margin-bottom:8px}.card p{font-size:15px;color:#475569;line-height:1.6}
+.card a{color:#2563EB;font-weight:700;font-size:14px;transition:.3s;display:inline-block;padding:5px 10px;border-radius:8px}
+.card a:hover{color:#fff !important;background:#2563EB !important;padding:5px 14px;box-shadow:0 8px 18px rgba(37,99,235,.3)}
+.price-card{background:#fff;border-radius:20px;padding:28px;border:1.5px solid #E0EAFD;text-align:center;transition:.35s;box-shadow:0 8px 22px rgba(37,99,235,.06)}.price-card:hover{transform:translateY(-6px);box-shadow:0 24px 40px rgba(37,99,235,.15)}.price-card.pop{background:linear-gradient(180deg,#0B1A5A,#2563EB);color:#fff;box-shadow:0 24px 44px rgba(37,99,235,.32)}.price-card.pop h3{color:#fff}.price-card.pop p,.price-card.pop li{color:#DBEAFE}.price-card ul{list-style:none;text-align:left;margin:18px 0;line-height:2}
+input{width:100%;padding:14px;border:1.5px solid #DCE7FF;border-radius:10px;margin:7px 0;outline:none;transition:.3s;font-family:inherit;background:#F8FAFC;font-size:15px;color:#1E293B}input:focus{border-color:#2563EB;box-shadow:0 0 0 3px rgba(37,99,235,.15);background:#fff}
+.faq{border:1.5px solid #E0EAFD;border-radius:14px;margin-bottom:10px;background:#fff;transition:.3s}.faq:hover{border-color:#2563EB}.faq button{width:100%;text-align:left;padding:16px;background:none;border:none;font-weight:700;font-size:15px;color:#0B1A5A;cursor:pointer;display:flex;justify-content:space-between}.faq p{display:none;padding:0 16px 16px;color:#475569;font-size:14px}.faq.open p{display:block}
+.video-card{background:#fff;border-radius:16px;padding:12px;border:1.5px solid #E0EAFD;transition:.35s;box-shadow:0 8px 20px rgba(37,99,235,.06)}.video-card:hover{transform:translateY(-5px);box-shadow:0 20px 34px rgba(37,99,235,.14)}.video-card video{width:100%;border-radius:12px;background:#000;aspect-ratio:16/9}.video-card p{padding:8px 4px;font-weight:700;color:#0B1A5A}
+/* PACKAGES - THEME MATCHED PROFESSIONAL */
+.pkg-wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:stretch;max-width:1120px;margin:0 auto}
+.pkg-card{flex:1;min-width:300px;max-width:350px;background:#fff;border:1.5px solid #E0EAFD;border-radius:20px;padding:0;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 22px rgba(37,99,235,.07);transition:.35s}
+.pkg-card:hover{transform:translateY(-6px);box-shadow:0 22px 38px rgba(37,99,235,.15);border-color:#2563EB}
+.pkg-head{padding:26px 24px 20px;color:#fff}
+.pkg-head small{font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;opacity:.9}
+.pkg-head h3{font-size:32px;line-height:1.05;color:#fff !important;margin:6px 0 0}
+.pkg-head p{font-size:13px;color:#DBEAFE;margin-top:8px;line-height:1.5;font-weight:500}
+.pkg-body{padding:20px 24px 22px;display:flex;flex-direction:column;flex:1}
+.pkg-body ul{list-style:none;margin:0;padding:0;font-size:14px;line-height:1.9;color:#334155}
+.pkg-body li{padding-left:22px;position:relative}
+.pkg-body li::before{content:"✓";position:absolute;left:0;color:#2563EB;font-weight:800}
+.pkg-btn{margin-top:auto;display:flex;justify-content:space-between;align-items:center;background:#0B1A5A;color:#fff !important;padding:13px 16px;border-radius:12px;font-weight:700;font-size:14px;margin-top:20px}
+.pkg-card.pop{border:2px solid #10B981;box-shadow:0 24px 44px rgba(16,185,129,.28)}
+.pkg-card.pop .pkg-head{background:linear-gradient(135deg,#065F46,#10B981)}
+.pkg-card.pop .pkg-badge{background:#ECFDF5;color:#065F46}
+.pkg-card.pop .pkg-btn{background:#059669}
+.pkg-card.b .pkg-head{background:linear-gradient(135deg,#0B1A5A,#1E40AF)}
+.pkg-card.c .pkg-head{background:linear-gradient(135deg,#0B1A5A,#2563EB)}
+.pkg-card.c .pkg-btn{background:#2563EB}
+.pkg-badge{display:inline-block;background:#fff;color:#2563EB;padding:5px 11px;border-radius:100px;font-size:12px;font-weight:800;margin-bottom:6px}
+#sparkle-chat-btn{position:fixed;bottom:22px;right:22px;z-index:9999;width:68px;height:68px;border-radius:50%;background:#fff;border:2px solid #2563EB;cursor:pointer;display:flex;align-items:center;justify-content:center;overflow:hidden;animation:chatPulse 2.8s ease-in-out infinite;box-shadow:0 14px 30px rgba(37,99,235,.28)}
+#sparkle-chat-btn img{width:54px;height:54px;object-fit:contain}
+@keyframes chatPulse{0%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,99,235,.35)}50%{transform:scale(1.08);box-shadow:0 0 0 12px rgba(37,99,235,0)}100%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,99,235,0)}}
+#sparkle-chat-box{position:fixed;bottom:96px;right:22px;z-index:9999;width:360px;max-width:92vw;background:#fff;border-radius:18px;overflow:hidden;display:none;border:1px solid #E5E8EF;box-shadow:0 24px 50px rgba(37,99,235,.22);animation:pageIn .35s ease}
+#sparkle-chat-box.open{display:block}
+#sparkle-messages{height:320px;overflow-y:auto;padding:16px;background:#F8FAFC}
+footer{background:#F8FAFC;padding:40px 5% 24px;text-align:center;border-top:1px solid #E8EEF7}footer img{height:90px}footer a{color:#475569;font-size:14px;font-weight:600}
+@media(max-width:800px){.hero h1{font-size:34px}nav{display:none}.logo img{height:46px}.hero-logo{height:88px}}
+footer a{transition:.3s;padding:4px 8px;border-radius:8px}
+footer a:hover{color:#2563EB;background:#EFF6FF}
+.p-filter.active{background:#2563EB !important;color:#fff !important;box-shadow:0 8px 18px rgba(37,99,235,.25)}
+.p-filter{transition:.3s !important}.p-filter:hover{transform:translateY(-2px)}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Lahore, Pakistan | Rated 4.9 / 5</span><span>0335-7772753 | sales.sparkleclean@outlook.com</span></div>
+<header><div class="logo"><img src="logo.png" alt="Sparkle"></div><nav><a class="active" onclick="showPage('home',this)">Home</a><a onclick="showPage('about',this)">About</a><a onclick="showPage('services',this)">Services</a><a onclick="showPage('products',this)">Products</a><a onclick="showPage('packages',this)">Packages</a><a onclick="showPage('videos',this)">Videos</a><a onclick="showPage('contact',this)">Contact</a></nav><button class="btn btn-blue" onclick="showPage('contact',null)">Free Site Visit</button></header>
+
+<div id="page-home" class="page active">
+<div class="hero">
+<div class="hero-logo-wrap"><img src="logo.png" alt="Sparkle Clean Solution" class="hero-logo"></div>
+<div class="badge">Premium Cleaning • Lahore • Trusted by Schools, Offices & Hospitals</div><h1>Every Space Deserves To Be <span>Clean, Safe & Welcoming.</span></h1><p>A Cleaner Place, A Healthier Life. Trained staff, daily supervision, colour-code system, GPS Before / After reporting, and modern machinery.</p><div class="hero-btns"><a class="btn btn-green" href="https://wa.me/923357772753?text=Hello!%20I%20need%20a%20Free%20Site%20Visit">WhatsApp Us</a><button class="btn btn-blue" onclick="showPage('packages',null)">View Packages</button><button class="btn btn-outline" onclick="showPage('services',null)">View Services</button></div><div class="stats"><div class="stat"><b>100+ Sites</b><span>Schools, Offices</span></div><div class="stat"><b>50+ Trained Staff</b><span>Uniform + ID Card</span></div><div class="stat"><b>100% Supervised</b><span>Daily Checklist</span></div><div class="stat"><b>6+ Years</b><span>Experience</span></div></div></div>
+<section><h2 style="text-align:center">Why Choose Sparkle?</h2><p class="sub" style="text-align:center">Professional system, not just cleaning.</p><div class="grid"><div class="card"><h3>Daily Cleaning</h3><p>Floor, dusting, washroom, waste, pantry.<br><br><a onclick="showPage('services',null)" style="cursor:pointer">See Full Services →</a></p></div><div class="card"><h3>Deep Cleaning</h3><p>Machine scrubbing, carpet, sofa, glass.<br><br><a onclick="showPage('services',null)" style="cursor:pointer">See Full Services →</a></p></div><div class="card"><h3>Packages</h3><p>Package A, B, C — Compare all.<br><br><a onclick="showPage('packages',null)" style="cursor:pointer">Compare Packages →</a></p></div></div></section>
+</div>
+
+<div id="page-about" class="page">
+<div class="page-hero"><h2>About Us</h2><p>Trusted Hygiene Partner for Homes, Schools, Offices & Hospitals.</p></div>
+<section><h2>Who We Are</h2><p class="sub">Sparkle Clean Solution is built on a simple belief: Every space deserves to be clean, safe and welcoming. We provide a professional hygiene system to schools, colleges, offices, hospitals, mosques and homes in Lahore.</p><div class="grid"><div class="card"><h3>Our Mission</h3><p>To support healthier, cleaner and more productive environments through reliable, professional cleaning services tailored to each client's facility, schedule and budget.</p></div><div class="card"><h3>Our Vision</h3><p>To become Lahore's most trusted hygiene partner through quality, integrity and responsive service.</p></div><div class="card"><h3>Our Values</h3><p>Consistency: Same standard every day. Communication: Daily photos, monthly report. Care: Safe chemicals, colour-code system, staff training.</p></div><div class="card"><h3>What Makes Us Different?</h3><p>1) Trained staff, 2) Supervisor on every site, 3) GPS Before / After photos, 4) Backup staff, 5) Colour-code system, 6) Our own material + machinery.</p></div></div></section>
+</div>
+
+<div id="page-services" class="page">
+<div class="page-hero"><h2>Our Services</h2><p>Daily Cleaning • Deep Cleaning • Housekeeping • Supervision • Comprehensive • Products</p></div>
+<section><h2>Our Premium Services</h2><p class="sub">Everything included in each service is written here in advance.</p><div class="grid"><div class="card"><h3>1. Daily Cleaning</h3><p>Floor sweeping & mopping (2x daily), Dusting, Washroom cleaning + sanitization, Waste removal, Pantry care, High-touch points cleaning.</p></div><div class="card"><h3>2. Deep Cleaning</h3><p>Machine scrubbing, Carpet extraction, Sofa vacuuming, Glass & windows, Grout & tile detailing, Fans & AC vents dusting.</p></div><div class="card"><h3>3. Housekeeping</h3><p>Dedicated team (1-10 staff), Morning + closing shift, Classroom / cabin cleaning, Washroom schedule, Attendance + uniform, Backup staff.</p></div><div class="card"><h3>4. Supervision</h3><p>Daily / Weekly supervision visit, Inspection as per checklist, Attendance & performance reporting, BICS standard training, Colour-code & safety training.</p></div><div class="card"><h3>5. Comprehensive</h3><p>Trained Staff + Supervisor, All Material Included, Modern Machinery, Monthly Deep Cleaning, Daily GPS Before / After Photos, Monthly Report.</p></div><div class="card"><h3>6. Cleaning Products</h3><p>Toilet Cleaner, Dishwasher, Spray, Premium Tissue, Pump, Phenyl. Safe formulas, fresh fragrance. Bulk orders for schools / offices.</p></div></div></section>
+</div>
+
+<div id="page-products" class="page">
+<div class="page-hero"><h2>Product Catalogue</h2><p>Complete Cleaning Range — One Brand, Every Solution.</p></div>
+<section>
+<img src="products.jpg" style="width:100%;border-radius:14px;margin-bottom:22px">
+<h2 style="font-size:32px;color:#0B1A5A">Our Complete Product Range</h2>
+<p style="color:#475569;margin:8px 0 20px;font-weight:500">Cleaning Chemicals • Equipment • Tissue • Disposables — Sab Kuch Ek Jagah. Lahore Mein Same-Day Delivery.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px">
+<button onclick="filterProducts('all')" class="p-filter active" data-f="all" style="padding:10px 18px;border-radius:999px;border:1px solid #2563EB;background:#0B1A5A;color:#fff;cursor:pointer;font-weight:600">All Products</button>
+<button onclick="filterProducts('chemical')" class="p-filter" data-f="chemical" style="padding:10px 18px;border-radius:999px;border:1px solid #D6DAE5;background:#fff;cursor:pointer;font-weight:600">🧴 Chemicals</button>
+<button onclick="filterProducts('equipment')" class="p-filter" data-f="equipment" style="padding:10px 18px;border-radius:999px;border:1px solid #D6DAE5;background:#fff;cursor:pointer;font-weight:600">🧹 Equipment</button>
+<button onclick="filterProducts('tissue')" class="p-filter" data-f="tissue" style="padding:10px 18px;border-radius:999px;border:1px solid #D6DAE5;background:#fff;cursor:pointer;font-weight:600">🧻 Tissue & Paper</button>
+<button onclick="filterProducts('accessory')" class="p-filter" data-f="accessory" style="padding:10px 18px;border-radius:999px;border:1px solid #D6DAE5;background:#fff;cursor:pointer;font-weight:600">🧤 Accessories</button>
+</div>
+<div class="grid" id="productGrid">
+<div class="card p-item" data-cat="chemical"><h3>Toilet Cleaner</h3><p>500mL • BEST SELLER<br>Powerful Lime Scale Remover, Thick Gel, Fresh Fragrance</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Toilet%20Cleaner">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="chemical"><h3>Dishwasher Liquid</h3><p>750mL • LEMON<br>Lemon, Grease Cutting, Gentle on Hands</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Dishwasher%20Liquid">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="chemical"><h3>All-Purpose Spray</h3><p>500mL • STREAK-FREE<br>Multi-Surface, Table, Glass, Kitchen, Tiles</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20All-Purpose%20Spray">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="chemical"><h3>Glass Cleaner</h3><p>500mL • SHINE<br>Streak-Free, Window, Mirror, Glass Doors</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Glass%20Cleaner">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="chemical"><h3>Floor Cleaner</h3><p>1 Litre • FRESH<br>Marble, Tiles, Wooden Floor, Long Lasting Fragrance</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Floor%20Cleaner">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="chemical"><h3>Hand Wash</h3><p>500mL • GENTLE<br>Anti-Bacterial, Soft on Skin, For Office & Home</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Hand%20Wash">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="equipment"><h3>Pro Mop Set</h3><p>360° Spin Mop + Bucket<br>Heavy Duty, For Offices, Schools & Hospitals</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Pro%20Mop%20Set">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="equipment"><h3>Dishwasher Pump</h3><p>600mL • CONCENTRATED<br>Concentrated, Rinse Aid Formula</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Dishwasher%20Pump">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="equipment"><h3>Scrub Brush Set</h3><p>3 Pcs • HEAVY DUTY<br>Toilet Brush, Floor Brush, Tile Brush</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Scrub%20Brush%20Set">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="equipment"><h3>Spray Bottle</h3><p>750mL • REFILLABLE<br>For Chemicals, Water Spray, Easy Grip</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Spray%20Bottle">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="tissue"><h3>Premium Tissue</h3><p>100 Sheets • 3-PLY<br>Soft & Strong, Office, School, Home</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Premium%20Tissue">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="tissue"><h3>Toilet Roll - Jumbo</h3><p>Pack of 12 • 2-PLY<br>For Offices, Schools, Hospitals - Bulk Available</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Toilet%20Roll">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="tissue"><h3>Paper Towel Roll</h3><p>Pack of 6 • ABSORBENT<br>Kitchen, Office Pantry, Quick Dry</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Paper%20Towel">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="accessory"><h3>Cleaning Gloves</h3><p>Pair • REUSABLE<br>Rubber Gloves, For Kitchen & Washroom</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Cleaning%20Gloves">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="accessory"><h3>Trash Bags</h3><p>Pack of 30 • LARGE<br>Black, Strong, For Office & Home Dustbins</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Trash%20Bags">Order on WhatsApp →</a></div>
+<div class="card p-item" data-cat="accessory"><h3>Air Freshener</h3><p>300mL • LONG LASTING<br>For Washroom, Office, Lobby - 4 Fragrances</p><br><a href="https://wa.me/923357772753?text=I%20want%20to%20order%20Air%20Freshener">Order on WhatsApp →</a></div>
+</div>
+<div style="margin-top:24px;background:#EFF6FF;padding:18px;border-radius:12px;text-align:center"><b>Bulk Order Chahiye?</b> Schools, Offices & Hospitals ke liye special wholesale rate — <a href="https://wa.me/923357772753?text=I%20want%20bulk%20price%20list" style="color:#0B1A5A">Get Price List on WhatsApp →</a></div>
+</section>
+</div>
+
+<!-- ============ PACKAGES PAGE - SEPARATE & THEME MATCHED ============ -->
+<div id="page-packages" class="page">
+<div class="page-hero"><h2>Our Packages</h2><p>A Cleaner Place, A Healthier Life.</p></div>
+<section>
+<h2 style="text-align:center">Choose The Right Package</h2>
+<p class="sub" style="text-align:center">Same system, same supervision — only scope changes. Price after Free Site Visit.</p>
+<div class="pkg-wrap">
+
+<!-- PACKAGE B -->
+<div class="pkg-card b">
+<div class="pkg-head"><small>Package B</small><h3>Housekeeping<br>Services</h3><p>Our staff, your material. Best for daily cleaning.</p></div>
+<div class="pkg-body"><ul>
+<li>Trained Cleaning staff</li><li>Uniform + ID Card Staff</li><li>Daily Housekeeping</li><li>Floor Sweeping & Mopping</li><li>Dusting & Waste Removal</li><li>Monthly Deep Cleaning</li><li>Daily/weekly supervision</li><li>Washroom Cleaning</li><li>Glass / Window Cleaning</li><li>Attendance reporting</li><li>Inspection reports</li><li>Back Up Staff on Leave</li>
+</ul><a class="pkg-btn" href="https://wa.me/923357772753?text=I%20want%20Package%20B%20-%20Housekeeping%20Services">Package B <span>→</span></a></div>
+</div>
+
+<!-- PACKAGE A - BEST DEAL - GREEN -->
+<div class="pkg-card pop">
+<div class="pkg-head"><span class="pkg-badge">#bestdeal • Most Popular</span><br><small>Package A</small><h3>Comprehensive<br>Services</h3><p>Everything included — staff + material + machinery.</p></div>
+<div class="pkg-body"><ul>
+<li>Trained Cleaning staff</li><li>Uniform + ID Card Staff</li><li>Daily Housekeeping</li><li>Floor Sweeping & Mopping</li><li>Dusting & Waste Removal</li><li>Monthly Deep Cleaning</li><li>Daily/weekly supervision</li><li>Washroom Cleaning</li><li>Cleanliness with Machinery</li><li>Cleaning Material Tissue to Toilet Cleaner</li><li>Glass / Window Cleaning</li><li>Annually Floor scrubbing & Polishing</li><li>Daily GPS Picture Before/After</li><li>Attendance reporting</li><li>Monthly Inspection reports</li><li>Back Up Staff on Leave</li>
+</ul><a class="pkg-btn" href="https://wa.me/923357772753?text=I%20want%20Package%20A%20-%20Comprehensive%20Services">Package A <span>→</span></a></div>
+</div>
+
+<!-- PACKAGE C - BLUE -->
+<div class="pkg-card c">
+<div class="pkg-head"><small>Package C</small><h3>Supervision<br>Services</h3><p>Your staff, our supervision & training system.</p></div>
+<div class="pkg-body"><ul>
+<li>Client's Housekeeping staff</li><li>Daily/weekly supervision</li><li>Attendance reporting</li><li>Daily GPS Picture Before/After</li><li>Inspection reports</li><li>Housekeeping Training</li><li>Monthly Performance report</li><li>Structured In-House Training (STM) Following BICS Standards</li><li>Colour Code & Safety Training</li>
+</ul><a class="pkg-btn" href="https://wa.me/923357772753?text=I%20want%20Package%20C%20-%20Supervision%20Services">Package C <span>→</span></a></div>
+</div>
+
+</div>
+<div style="text-align:center;margin-top:26px"><a class="btn btn-blue" href="https://wa.me/923357772753?text=I%20want%20Free%20Site%20Visit%20for%20Package">Book Free Site Visit →</a></div>
+</section>
+</div>
+
+<!-- ============ VIDEOS PAGE - SEPARATE ============ -->
+<div id="page-videos" class="page">
+<div class="page-hero"><h2>Our Work In Videos</h2><p>Real Work, Real Sparkle — See how we work.</p></div>
+<section>
+<div style="max-width:900px;margin:0 auto;padding:0 14px">
+<div class="video-card" style="padding:14px">
+<video autoplay muted loop playsinline controls preload="auto" poster="logo.png" style="width:100%;border-radius:16px;background:#000;aspect-ratio:16/9;display:block">
+<source src="videos/01-hero-video.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+<h3 style="padding:16px 4px 6px;font-size:22px;color:#0B1A5A">Sparkle Clean Solution - We Clean Everything</h3>
+<p style="padding:0 4px 12px;color:#475569;font-size:15px;line-height:1.7;font-weight:500">
+We provide complete cleaning services for Schools, Offices, Homes, Hospitals, Mosques, Banks, Shops & Factories. From daily housekeeping to deep cleaning, floor mopping, washroom cleaning, glass cleaning, sofa & carpet shampooing — our trained team does it all with proper chemicals & machines.
+</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;padding:0 4px 14px">
+<span style="background:#EFF6FF;color:#1D4ED8;padding:7px 12px;border-radius:20px;font-size:13px;font-weight:600">🏫 School Cleaning</span>
+<span style="background:#ECFDF5;color:#047857;padding:7px 12px;border-radius:20px;font-size:13px;font-weight:600">🏢 Office Cleaning</span>
+<span style="background:#FEF3C7;color:#92400E;padding:7px 12px;border-radius:20px;font-size:13px;font-weight:600">🏠 Home Cleaning</span>
+<span style="background:#FCE7F3;color:#9D174D;padding:7px 12px;border-radius:20px;font-size:13px;font-weight:600">🏥 Hospital Cleaning</span>
+<span style="background:#F1F5F9;color:#334155;padding:7px 12px;border-radius:20px;font-size:13px;font-weight:600">🕌 Mosque Cleaning</span>
+<span style="background:#E0E7FF;color:#4338CA;padding:7px 12px;border-radius:20px;font-size:13px;font-weight:600">🏭 Factory Cleaning</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px;padding:0 4px 8px">
+<a href="https://wa.me/923357772753?text=I%20saw%20your%20video,%20I%20want%20Free%20Site%20Visit" style="background:#2563EB;color:#fff;padding:12px 22px;border-radius:10px;font-weight:700;font-size:14px">Book Free Site Visit →</a>
+<a href="https://wa.me/923357772753?text=I%20want%20cleaning%20services%20quote" style="background:#10B981;color:#fff;padding:12px 22px;border-radius:10px;font-weight:700;font-size:14px">Get Quote on WhatsApp</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<div id="page-contact" class="page">
+<div class="page-hero"><h2>Contact Us</h2><p>Let's Make Your Space Sparkle! Book a Free Site Visit today.</p></div>
+<section><div class="grid"><div class="card"><h3>Talk Directly</h3><p>Phone / WhatsApp: 0335-7772753<br>Email: sales.sparkleclean@outlook.com<br>Location: Lahore, Pakistan<br>Timing: Mon - Sat, 9 AM - 7 PM<br>Service Areas: All Lahore — DHA, Gulberg, Model Town, Johar Town, Cantt, Bahria, Township, etc.</p><br><a class="btn btn-green" href="https://wa.me/923357772753">WhatsApp Chat</a></div><div class="card"><h3>Book a Free Site Visit</h3><input placeholder="Your Name *"><input placeholder="School / Office Name *"><input placeholder="Area / Location"><input placeholder="Phone / WhatsApp *"><a class="btn btn-blue" style="width:100%" href="https://wa.me/923357772753">Submit on WhatsApp →</a></div></div>
+<h2 style="margin-top:30px">Frequently Asked Questions</h2><div class="faq"><button onclick="this.parentElement.classList.toggle('open')">1. What is the price? <span>+</span></button><p>Price is given after the site visit — it depends on area, washrooms, floors and number of staff. You will receive a written quote on the Free Site Visit.</p></div><div class="faq"><button onclick="this.parentElement.classList.toggle('open')">2. What happens if staff is on leave? <span>+</span></button><p>Backup staff will come. Your site will never be left unattended.</p></div><div class="faq"><button onclick="this.parentElement.classList.toggle('open')">3. Who will provide the material? <span>+</span></button><p>In Package A & B, material is provided by the client. In Package C, material + machinery is provided by us.</p></div><div class="faq"><button onclick="this.parentElement.classList.toggle('open')">4. Are the chemicals safe? <span>+</span></button><p>Yes, we use child-safe and surface-safe chemicals. With the colour-code system, washroom and kitchen cloths are kept separate.</p></div></section>
+</div>
+
+<footer><img src="logo.png"><p style="margin-top:12px;color:#475569;font-size:14px">Housekeeping & Deep Cleaning | Lahore</p><p style="font-size:13px;color:#64748B">© 2026 Sparkle Clean Solution. All Rights Reserved.</p><p style="margin-top:12px"><a onclick="showPage('home',null)" style="cursor:pointer">Home</a> | <a onclick="showPage('about',null)" style="cursor:pointer">About</a> | <a onclick="showPage('services',null)" style="cursor:pointer">Services</a> | <a onclick="showPage('products',null)" style="cursor:pointer">Products</a> | <a onclick="showPage('packages',null)" style="cursor:pointer">Packages</a> | <a onclick="showPage('videos',null)" style="cursor:pointer">Videos</a> | <a onclick="showPage('contact',null)" style="cursor:pointer">Contact</a></p></footer>
+
+<button id="sparkle-chat-btn" onclick="toggleChat()"><img src="logo.png" alt="Chat"></button>
+<div id="sparkle-chat-box"><div style="background:#0B1A5A;color:#fff;padding:16px;display:flex;justify-content:space-between;align-items:center"><div><b>Sparkle AI Live Chat</b><br><span style="font-size:12px;color:#BFDBFE">Online • Replies Instantly</span></div><button onclick="toggleChat()" style="background:#fff;border:none;width:32px;height:32px;border-radius:50%;cursor:pointer">✕</button></div><div id="sparkle-messages"><div style="margin:8px 0"><span style="background:#EFF6FF;color:#0B1A5A;padding:9px 13px;border-radius:12px;display:inline-block;font-size:14px">Sparkle AI: Hello! Ask me about Price, Packages, Services, Products, Timing or Free Site Visit.</span></div></div><div style="display:flex;gap:8px;padding:12px;border-top:1px solid #E2E8F0"><input id="sparkle-input" placeholder="Type your message..." style="flex:1;padding:12px;border:1px solid #E2E8F0;border-radius:8px;outline:none"><button onclick="sendChat()" style="background:#2563EB;color:#fff;border:none;padding:12px 18px;border-radius:8px;font-weight:600;cursor:pointer">Send</button></div><div style="padding:8px;text-align:center;font-size:12px;background:#F8FAFC"><a href="https://wa.me/923357772753" style="color:#15803D;font-weight:600">Chat on WhatsApp: 0335-7772753</a></div></div>
+
+<script>
+function showPage(pageId, el){
+  document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('active'); });
+  document.getElementById('page-' + pageId).classList.add('active');
+  document.querySelectorAll('nav a').forEach(function(a){ a.classList.remove('active'); });
+  if(el){ el.classList.add('active'); }
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+function toggleChat(){ document.getElementById('sparkle-chat-box').classList.toggle('open'); }
+function getAIReply(msg){
+  msg = msg.toLowerCase();
+  if(msg.includes('price') || msg.includes('cost')) return "Our pricing depends on your site size. Package A is for small offices, Package B is Most Popular for Schools, Package C is All-Inclusive. For exact price, book a FREE Site Visit.";
+  if(msg.includes('package')) return "We have 3 Packages: A) Housekeeping, B) Supervision, C) Comprehensive. Which one do you want?";
+  if(msg.includes('service') || msg.includes('cleaning')) return "We offer: Daily Cleaning, Deep Cleaning, Housekeeping, Supervision, Comprehensive Service, and Products.";
+  if(msg.includes('product') || msg.includes('toilet') || msg.includes('tissue') || msg.includes('mop') || msg.includes('chemical') || msg.includes('equipment')) return "We have 16+ Products in 4 Categories: 1) CHEMICALS - Toilet Cleaner, Dishwasher Liquid, All-Purpose Spray, Glass Cleaner, Floor Cleaner, Hand Wash. 2) EQUIPMENT - Pro Mop Set, Scrub Brush Set, Spray Bottle. 3) TISSUE - Premium Tissue, Jumbo Toilet Roll, Paper Towel. 4) ACCESSORIES - Gloves, Trash Bags, Air Freshener. Which category do you want price for?";
+  if(msg.includes('timing') || msg.includes('time')) return "Our Timing: Mon - Sat, 9 AM - 7 PM. WhatsApp is 24/7.";
+  if(msg.includes('visit') || msg.includes('free') || msg.includes('book')) return "Great! Free Site Visit is FREE. Please send: 1) Your Name, 2) School/Office Name, 3) Area, 4) Phone Number.";
+  if(msg.includes('hello') || msg.includes('hi') || msg.includes('salam')) return "Hello! Welcome to Sparkle! Ask me about Packages, Price, Services, Products, Timing or Free Site Visit.";
+  if(msg.includes('call') || msg.includes('number') || msg.includes('whatsapp')) return "You can call / WhatsApp us directly: 0335-7772753.";
+  return "Thanks! You can ask about: Price, Packages, Services, Products, Timing, Free Site Visit. Or Call us: 0335-7772753";
+}
+function sendChat(){
+  var input = document.getElementById('sparkle-input');
+  var msg = input.value.trim(); if(!msg) return;
+  var box = document.getElementById('sparkle-messages');
+  box.innerHTML += '<div style="text-align:right;margin:8px 0"><span style="background:#2563EB;color:#fff;padding:9px 13px;border-radius:12px;display:inline-block;font-size:14px;max-width:85%">' + msg + '</span></div>';
+  input.value = ''; box.scrollTop = box.scrollHeight;
+  setTimeout(function(){ var reply = getAIReply(msg); box.innerHTML += '<div style="margin:8px 0"><span style="background:#EFF6FF;color:#0B1A5A;padding:9px 13px;border-radius:12px;display:inline-block;font-size:14px;max-width:88%">Sparkle AI: ' + reply + '</span></div>'; box.scrollTop = box.scrollHeight; }, 700);
+}
+document.getElementById('sparkle-input').addEventListener('keypress', function(e){ if(e.key === 'Enter'){ sendChat(); } });
+function filterProducts(cat){
+  document.querySelectorAll('.p-item').forEach(function(el){
+    el.style.display = (cat==='all' || el.dataset.cat===cat) ? '' : 'none';
+  });
+  document.querySelectorAll('.p-filter').forEach(function(b){
+    if(b.dataset.f===cat){ b.style.background='#2563EB'; b.style.color='#fff'; }
+    else { b.style.background='#fff'; b.style.color='#111'; }
+  });
+}
+</script>
+</body>
+</html>
